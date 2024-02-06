@@ -1,16 +1,27 @@
 import './App.css'
-// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavBar from './components/navBar'
-import Notes from './components/notes'
+import Home from './components/home'
 import SideBar from './components/sideBar'
+import NotFound from './components/notFound'
+import Notes from './components/notes'
+import NoteFolders from './components/noteFolders'
 
 function App() {
   return (
     <div className="App">
-      <h1>moi :3</h1>
-      <NavBar />
-      <SideBar />
-      <Notes />
+      <BrowserRouter>
+        <NavBar />
+        <div className="flex-container">
+          <SideBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/notes" element={<Notes />} />
+            <Route path="/notefolders" element={<NoteFolders />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
     </div>
   )
 }
