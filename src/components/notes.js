@@ -1,13 +1,12 @@
-import Data from '../Data'
 import Note from './note'
-import React from 'react'
+import { notes } from '../Data'
 
 const Notes = () => {
   return (
     <div className="notes">
-      <h1>Notes</h1>
-      {Data.map((note, index) => {
-        return <Note key={index} note={note} />
+      {notes.map((note) => {
+        console.log(note)
+        return <Note key={note.id} {...note} />
       })}
     </div>
   )
