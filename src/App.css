@@ -4,7 +4,8 @@
 
 .flex-container {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
+  height: auto;
   background-color: #01143b;
 }
 
@@ -53,7 +54,7 @@
   margin: 5px;
   padding: 5px;
   position: relative;
-  top: -135px;
+  top: -35px;
 }
 
 .notes {
@@ -69,7 +70,7 @@
 
 .home {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 80%;
   margin: 5px;
@@ -80,16 +81,16 @@
 }
 
 .sideBar {
+  display: flex;
   width: 20%;
   height: auto;
   margin: 5px;
-  display: flex;
   justify-content: space-around;
   background-color: #1f66e9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: #282c34 2px solid;
   border-radius: 5px;
-  order: 1; /* Add this line to position the sidebar to the right */
+  order: 1;
 }
 
 .notFound {
@@ -104,14 +105,16 @@
 
 .notes-section {
   display: flex;
-  /* position: relative; */
-  position: absolute;
-  left: 50px;
-  top: 150px;
+  position: relative;
+  /* position: absolute; */
+  /* left: 50px;
+  top: 150px; */
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-items: left;
+  /* justify-content: space-between; */
   /* justify-content: center; */
   width: 750px;
+  bottom: 230px;
   margin: 5px;
   height: auto;
   /* background-color: #38039b; */
@@ -120,10 +123,9 @@
 }
 
 .noteFolders-section {
-  position: absolute;
-  left: 916px;
-  top: 175px;
-  /* background-color: #01143b; */
+  position: relative;
+  left: 225px;
+  bottom: 230px;
 }
 
 .noteFolders-section button {
