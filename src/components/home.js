@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className="home">
-      <section className="notes-section">
+      {/* <section className="notes-section">
         {notes.slice(0, 3).map((note) => {
           console.log(note)
           return <Note key={note.id} {...note} color={note.color} />
@@ -19,7 +19,7 @@ function Home() {
             <button>Navigate to Note Folders</button>
           </Link>
         </section>
-      }
+      } */}
     </div>
   )
 }

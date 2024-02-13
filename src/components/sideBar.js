@@ -16,11 +16,13 @@ const SideBar = () => {
     setNote([...note, newNote])
   }
   return (
-    <div className="sideBar">
-      <h2>SideBar</h2>
-      <button className="byttonAddNote" onClick={addNote}>
+    <div className="sideBar-Section">
+      <div className="sideBar">
+        <h2>SideBar</h2>
+        {/* <button className="byttonAddNote" onClick={addNote}>
         Add Note
-      </button>
+      </button> */}
+      </div>
     </div>
   )
 }
