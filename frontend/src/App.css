@@ -1,17 +1,21 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .flex-container {
-  display: flex;
-  height: 90vh;
+  /* display: flex; */
+  width: 80%;
+  /* min-height: 90vh;
+  height: auto; */
+  height: 100vh;
   background-color: #01143b;
 }
 
 .navBar {
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: 10%;
   justify-content: space-around;
   align-items: center;
   background-color: #01143b;
@@ -20,7 +24,7 @@
 .navBar-section {
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: auto;
   margin: 5px;
   justify-content: space-around;
   align-items: center;
@@ -53,7 +57,7 @@
   margin: 5px;
   padding: 5px;
   position: relative;
-  top: -135px;
+  top: -35px;
 }
 
 .notes {
@@ -69,27 +73,34 @@
 
 .home {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: auto;
   margin: 5px;
-  height: auto;
+  height: 88%;
   background-color: #1f66e9;
   border: #282c34 2px solid;
   border-radius: 5px;
 }
 
-.sideBar {
+.sideBar-Section {
+  display: flex;
   width: 20%;
   height: auto;
-  margin: 5px;
+  background-color: #01143b;
+  border-right: #282c34 2px solid;
+}
+
+.sideBar {
   display: flex;
+  width: 100%;
+  min-height: 98%;
+  height: auto;
+  margin: 5px;
   justify-content: space-around;
   background-color: #1f66e9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: #282c34 2px solid;
   border-radius: 5px;
-  order: 1; /* Add this line to position the sidebar to the right */
 }
 
 .notFound {
@@ -104,26 +115,20 @@
 
 .notes-section {
   display: flex;
-  /* position: relative; */
-  position: absolute;
-  left: 50px;
-  top: 150px;
+  position: relative;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* justify-content: center; */
+  justify-items: left;
   width: 750px;
+  bottom: 230px;
   margin: 5px;
   height: auto;
-  /* background-color: #38039b; */
-  /* border: #282c34 2px solid; */
   border-radius: 5px;
 }
 
 .noteFolders-section {
-  position: absolute;
-  left: 916px;
-  top: 175px;
-  /* background-color: #01143b; */
+  position: relative;
+  left: 225px;
+  bottom: 230px;
 }
 
 .noteFolders-section button {

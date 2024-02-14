@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar />
+        <SideBar />
         <div className="flex-container">
-          <SideBar />
+          <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/notes" element={<Notes />} />
