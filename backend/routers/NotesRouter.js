@@ -1,5 +1,5 @@
 const express = require('express');
-
+const router = express.Router();
 const {
     getNotes,
     newNote,
@@ -8,7 +8,10 @@ const {
     patchNote
 } = require('../controllers/NotesController');
 
-const router = express.Router();
+const requireAuth = require('../middlewares/requireAuth');
+
+// require authentification middleware
+router.use(requireAuth);
 
 // GET all notes
 router.get('/', getNotes);
