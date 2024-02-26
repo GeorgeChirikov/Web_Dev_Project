@@ -21,8 +21,15 @@ app.use('/api/notes', NotesRouter);
 app.use('/api/users', RegLogRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('API Running!')
 })
+
+app.use('/api/notes', require('./routers/NotesRouter'))
+app.use('/api/users', require('./routers/UsersRouter'))
+
+//middleware
+app.use(customMiddleware.unknownEndpoint)
+app.use(customMiddleware.errorHandler)
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`)
