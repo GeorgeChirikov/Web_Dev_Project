@@ -3,11 +3,22 @@ const express = require('express')
 const connectDB = require('./config/db')
 const app = express()
 const port = process.env.PORT || 3001
-const customMiddleware = require('./middlewares/customMiddleware')
+const cors = require('cors');
+const UsersRouter = require('./routers/UsersRouter')
+const NotesRouter = require('./routers/NotesRouter')
+const RegLogRouter = require('./routers/RegLogRouter')
+
 
 connectDB()
 
-app.use(express.json())
+// middleware
+app.use(cors());
+app.use(express.json());
+
+// routes
+app.use('/api/users', UsersRouter);
+app.use('/api/notes', NotesRouter);
+app.use('/api/users', RegLogRouter);
 
 app.get('/', (req, res) => {
   res.send('API Running!')
@@ -21,5 +32,5 @@ app.use(customMiddleware.unknownEndpoint)
 app.use(customMiddleware.errorHandler)
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
+  console.log(`Server running on http://localhost:${port}`)
 })

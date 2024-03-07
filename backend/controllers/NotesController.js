@@ -1,4 +1,4 @@
-const Note = require('../../../backend/models/Note')
+const Note = require('../models/Note')
 const mongoose = require('mongoose')
 
 //get all notes

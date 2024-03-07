@@ -1,5 +1,10 @@
-const User = require('../../../backend/models/User')
+const User = require('../models/User')
+const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
+
+const createToken = (_id) => {
+  return jwt.sign({ _id }, process.env.SECRET, { expiresIn: '7d' });
+};
 
 //get all users
 const getUsers = async (req, res) => {
@@ -8,18 +13,6 @@ const getUsers = async (req, res) => {
   res.status(200).json(users)
 }
 
-//New user
-const newUser = async (req, res) => {
-  const { email, password } = req.body
-
-  // add the user to db
-  try {
-    const user = await User.create({ email, password })
-    res.status(200).json({ message: 'User created' })
-  } catch (error) {
-    res.status(400).json({ error: error.message })
-  }
-}
 
 //Get a single user
 const getUser = async (req, res) => {
@@ -78,9 +71,8 @@ const patchUser = async (req, res) => {
 }
 
 module.exports = {
-  getUsers,
-  newUser,
+  getUsers,  
   getUser,
   deleteUser,
-  patchUser,
+  patchUser
 }
