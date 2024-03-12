@@ -10,9 +10,12 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
 	return (
 		<header>
 			<div className="container">
-				<Link to="/">
-					<h1>Dashboard</h1>
-				</Link>
+				{isAuthenticated && (
+					<Link to="/">
+						<h1>Home</h1>
+					</Link>
+				)}
+
 				<nav>
 					{isAuthenticated && (
 						<div>

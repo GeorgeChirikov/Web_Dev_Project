@@ -8,8 +8,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import SideBar from './components/sideBar';
 import NotFound from './components/notFound';
-import Notes from './components/notes';
 import NoteFolders from './components/noteFolders';
+import NoteForm from './components/NoteForm';
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(
@@ -49,7 +49,11 @@ function App() {
 								)
 							}
 						/>
-						<Route path="/notes" element={<Notes />} />
+
+						{/* <Route path="/create-note" element={<CreateNote />} /> */}
+
+						<Route path="/create-note" element={<NoteForm />} />
+
 						<Route path="/notefolders" element={<NoteFolders />} />
 						<Route path="*" element={<NotFound />} />
 					</Routes>
