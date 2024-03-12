@@ -22,7 +22,7 @@ describe('User Routes', () => {
         password: 'P@ssw0rd',
       };
 
-      const response = await api.post('/api/users/register').send(userData);
+      const response = await api.post('/api/users/signup').send(userData);
 
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty('token');
@@ -37,7 +37,7 @@ describe('User Routes', () => {
         password: 'invalidpassword',
       };
 
-      const response = await api.post('/api/users/register').send(userData);
+      const response = await api.post('/api/users/signup').send(userData);
 
       expect(response.status).toBe(400);
       expect(response.body).toHaveProperty('error');
