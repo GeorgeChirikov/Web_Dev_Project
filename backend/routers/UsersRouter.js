@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const {
-    getUsers,
-    getUser,
-    deleteUser,
-    patchUser
+	getUsers,
+	getUser,
+	deleteUser,
+	patchUser,
 } = require('../controllers/UsersController.js');
 
 // GET all users
