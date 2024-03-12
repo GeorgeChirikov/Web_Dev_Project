@@ -6,6 +6,6 @@ const { loginUser, registerUser } = require('../controllers/RegLogController');
 router.post('/login', loginUser);
 
 // register route
-router.post('/register', registerUser);
+router.post('/signup', registerUser);
 
 module.exports = router;

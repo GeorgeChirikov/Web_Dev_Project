@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const NavBar = ({ isAuthenticated, setIsAuthenticated }) => {
+const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
 	const handleClick = (e) => {
 		setIsAuthenticated(false);
 		localStorage.removeItem('token');
@@ -8,12 +8,11 @@ const NavBar = ({ isAuthenticated, setIsAuthenticated }) => {
 	};
 
 	return (
-		<div className="navBar">
-			<section className="navBar-section">
+		<header>
+			<div className="container">
 				<Link to="/">
-					<h1>Home</h1>
+					<h1>Dashboard</h1>
 				</Link>
-				<h1>NavBar</h1>
 				<nav>
 					{isAuthenticated && (
 						<div>
@@ -23,14 +22,14 @@ const NavBar = ({ isAuthenticated, setIsAuthenticated }) => {
 					)}
 					{!isAuthenticated && (
 						<div>
-							<Link to="/login">Login </Link>
+							<Link to="/login">Login</Link>
 							<Link to="/signup">Signup</Link>
 						</div>
 					)}
 				</nav>
-			</section>
-		</div>
+			</div>
+		</header>
 	);
 };
 
-export default NavBar;
+export default Navbar;
