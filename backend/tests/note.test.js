@@ -31,7 +31,7 @@ let token = null;
 beforeAll(async () => {
 	await User.deleteMany({});
 	const result = await api
-		.post('/api/users/register')
+		.post('/api/users/signup')
 		.send({ email: 'example@email.com', password: 'P@ssw0rd' });
 	token = result.body.token;
 });
