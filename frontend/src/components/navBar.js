@@ -19,7 +19,7 @@ const Navbar = ({ isAuthenticated, setIsAuthenticated }) => {
 				<nav>
 					{isAuthenticated && (
 						<div>
-							<span>{JSON.parse(localStorage.getItem('user')).email}</span>
+							<span>{JSON.parse(localStorage.getItem('user'))?.email ?? '(email not found)'}</span>
 							<button onClick={handleClick}>Log out</button>
 						</div>
 					)}
