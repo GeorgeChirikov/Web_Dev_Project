@@ -13,8 +13,9 @@ const NoteDetails = ({ note }) => {
 
     return (
         <div className="note-details">
-        <h4>{note.title}</h4>
-        <p>{formatDistanceToNow(new Date(note.date), { addSuffix: true })}</p>
+        <h3>{note?.title ?? 'no title'}</h3>
+        <text>{note?.content ?? 'no content'}</text>
+        <p>{formatDistanceToNow(new Date(note?.date === undefined ? new Date() : note.date ?? new Date()), { addSuffix: true })}</p>
         <span
             className="material-symbols-outlined"
             onClick={() => {

@@ -1,4 +1,5 @@
 import Note from './note'
+import NoteDetails from './NoteDetails'
 import { notes } from '../Data'
 import { useState } from 'react'
 const Notes = () => {
@@ -11,7 +12,7 @@ const Notes = () => {
   return (
     <div className="notes">
       {notes.map((note) => (
-        <>
+        <div key={note.id} className="note-container">
           <Note
             key={note.id}
             title={note.title}
@@ -19,7 +20,8 @@ const Notes = () => {
             color={note.color}
           />
           <button onClick={() => deleteNote(note.id)}>Delete</button>
-        </>
+          <NoteDetails key={note._id} note={note}/>
+        </div>
       ))}
     </div>
   )

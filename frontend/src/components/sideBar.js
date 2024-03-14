@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { notes } from '../Data' // Assuming you have a file called 'notes.js' in the '../data' directory
-
+import Notes from './notes'
 const SideBar = () => {
   const [note, setNote] = useState(notes)
 
@@ -18,7 +18,8 @@ const SideBar = () => {
   return (
     <div className="sideBar-Section">
       <div className="sideBar">
-        <h2>SideBar</h2>
+
+        {/*<Notes/>*/}
         {/* <button className="byttonAddNote" onClick={addNote}>
         Add Note
       </button> */}

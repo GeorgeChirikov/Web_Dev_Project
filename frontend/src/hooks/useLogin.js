@@ -14,6 +14,7 @@ export default function useLogin(url) {
         const user = await response.json();
     
         if (!response.ok) {
+          console.log("This should not load into the page, since the login had an error. If it does, the code needs fixing.")
           setError(user.error);
           setIsLoading(false);
           return error;
