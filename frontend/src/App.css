@@ -2,7 +2,53 @@
   text-align: center;
   display: flex;
 }
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
 
+.create h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.create label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.create input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.create button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create button:hover {
+  background-color: #0056b3;
+}
+
+.create .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
 .flex-container {
   /* display: flex; */
   width: 80%;
@@ -19,6 +65,50 @@
   justify-content: space-around;
   align-items: center;
   background-color: #01143b;  
+}
+
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.login h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #0056b3;
 }
 
 .navBar-section {

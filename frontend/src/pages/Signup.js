@@ -18,19 +18,19 @@ const Signup = ({ setIsAuthenticated }) => {
       navigate("/");
     }
   };
-
   return (
-    <>
-      <form className="signup" onSubmit={handleFormSubmit}>
-        <h3>Sign Up</h3>
+    <div className="login">
+      <h3>Sign up</h3>
+      <form onSubmit={handleFormSubmit}>
         <label>Email address:</label>
         <input {...email} />
         <label>Password:</label>
         <input {...password} />
         <button>Sign up</button>
       </form>
-    </>
+    </div>
   );
 };
+
 
 export default Signup;
