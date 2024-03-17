@@ -18,6 +18,7 @@ export default function useSignup(url) {
 			console.log(user.error);
 			setError(user.error);
 			setIsLoading(false);
+			alert('required fields are missing');
 			return error;
 		}
 

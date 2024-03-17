@@ -1,127 +1,127 @@
 .App {
-  text-align: center;
-  display: flex;
+	text-align: center;
+	display: flex;
 }
 .create {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
 }
 
 .create h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
 }
 
 .create label {
-  font-weight: bold;
-  margin-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
-.create input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+.create input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
 }
 
 .create button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 .create button:hover {
-  background-color: #0056b3;
+	background-color: #0056b3;
 }
 
 .create .error {
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 10px;
+	color: red;
+	font-size: 0.9rem;
+	margin-top: 10px;
 }
 .flex-container {
-  /* display: flex; */
-  width: 80%;
-  /* min-height: 90vh;
+	/* display: flex; */
+	width: 80%;
+	/* min-height: 90vh;
   height: auto; */
-  height: 100vh;
-  background-color: #01143b;
+	height: 100vh;
+	background-color: #01143b;
 }
 
 .navBar {
-  display: flex;
-  width: 100%;
-  height: 10%;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #01143b;  
+	display: flex;
+	width: 100%;
+	height: 10%;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #01143b;
 }
 
 .login {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
 }
 
 .login h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
 }
 
 .login form {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .login label {
-  font-weight: bold;
-  margin-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
 .login input {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
 
 .login button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
-  cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
 }
 
 .login button:hover {
-  background-color: #0056b3;
+	background-color: #0056b3;
 }
 
 .navBar-section {
-  display: flex;
-  width: 100%;
-  height: auto;
-  margin: 5px;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #001b52;
-  border-radius: 5px;
-  border: #282c34 2px solid;
-  color: white;
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: 5px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #001b52;
+	border-radius: 5px;
+	border: #282c34 2px solid;
+	color: white;
 }
 
 /*.note {
@@ -134,48 +134,64 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }*/
 .note {
-  max-height: 500px;
-  background-color: #e0e0e0;
-  overflow-y: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  border-radius: 5px;
+	max-height: 500px;
+	width: 70%;
+	background-color: #1274a1;
+	overflow-y: auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	border-radius: 5px;
 }
+
+.note-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	height: 100%;
+}
+
 .note-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #737883;
-  border-radius: 5px;
-  height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #737883;
+	border-radius: 5px;
+	height: 100%;
 }
 .note-container {
-  border: 1px solid #6200ff; /* Adds a border to each note */
-  padding: 10px;
-  border-radius: 5px; /* Rounds the corners of the note border */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to each note */
-  background-color: rgba(0, 136, 255, 0.507); /* Sets the note background color */
-  transition: transform 0.2s ease; /* Smooth transition for hover effect */
+	border: 1px solid #6200ff; /* Adds a border to each note */
+	padding: 10px;
+	border-radius: 5px; /* Rounds the corners of the note border */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to each note */
+	background-color: rgba(
+		0,
+		136,
+		255,
+		0.507
+	); /* Sets the note background color */
+	transition: transform 0.2s ease; /* Smooth transition for hover effect */
 }
 .note-article p {
-  margin: 5px;
-  padding: 5px;
-  position: relative;
-  top: -35px;
+	margin: 5px;
+	padding: 5px;
+	position: relative;
+	top: -35px;
 }
 .note-container:hover {
-  transform: scale(1.02); /* Slightly enlarges the note on hover */
+	transform: scale(1.02); /* Slightly enlarges the note on hover */
 }
 .notes {
-  max-height: 500px; /* Adjust the height as needed */
-  overflow-y: auto; /* Enables vertical scrolling */
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Spacing between notes */
+	max-height: 500px; /* Adjust the height as needed */
+	overflow-y: auto; /* Enables vertical scrolling */
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Spacing between notes */
 }
 
 /* .notes h1 {
@@ -183,70 +199,75 @@
 } */
 
 .home {
-  display: flex;
-  align-items: center;
-  width: auto;
-  margin: 5px;
-  height: 88%;
-  background-color: #1f66e9;
-  border: #282c34 2px solid;
-  border-radius: 5px;
+	display: flex;
+	align-items: center;
+	width: auto;
+	margin: 5px;
+	height: 88%;
+	background-color: #1f66e9;
+	border: #282c34 2px solid;
+	border-radius: 5px;
 }
 
 .sideBar-Section {
-  display: flex;
-  width: 20%;
-  height: auto;
-  background-color: #01143b;
-  border-right: #282c34 2px solid;
+	display: flex;
+	width: 20%;
+	height: auto;
+	background-color: #01143b;
+	border-right: #282c34 2px solid;
 }
 
 .sideBar {
-  display: flex;
-  width: 100%;
-  min-height: 98%;
-  height: auto;
-  margin: 5px;
-  justify-content: space-around;
-  background-color: #1f66e9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: #282c34 2px solid;
-  border-radius: 5px;
+	display: flex;
+	width: 100%;
+	min-height: 98%;
+	height: auto;
+	margin: 5px;
+	justify-content: space-around;
+	background-color: #1f66e9;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border: #282c34 2px solid;
+	border-radius: 5px;
 }
 
 .notFound {
-  position: relative;
-  top: 150px;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 40%;
-  color: azure;
+	position: relative;
+	top: 150px;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 40%;
+	color: azure;
 }
 
 .notes-section {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  justify-items: left;
-  width: 750px;
-  bottom: 230px;
-  margin: 5px;
-  height: auto;
-  border-radius: 5px;
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	justify-items: left;
+	width: 750px;
+	bottom: 230px;
+	margin: 5px;
+	height: auto;
+	border-radius: 5px;
 }
 
 .noteFolders-section {
-  position: relative;
-  left: 225px;
-  bottom: 230px;
+	position: relative;
+	left: 225px;
+	bottom: 230px;
 }
 
 .noteFolders-section button {
-  background-color: #01143b;
-  color: white;
-  width: 210px;
-  height: 290px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #01143b;
+	color: white;
+	width: 210px;
+	height: 290px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.material-symbols-outlined {
+	cursor: pointer;
+	color: rgb(226, 43, 52);
 }

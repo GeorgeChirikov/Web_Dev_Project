@@ -19,6 +19,7 @@ export default function useLogin(url) {
 			);
 			setError(user.error);
 			setIsLoading(false);
+			alert('Invalid username or password');
 			return error;
 		}
 
